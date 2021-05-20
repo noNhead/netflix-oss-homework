@@ -2,9 +2,14 @@ spring:
   cloud:
     config:
       server:
+#        native:
+#          searchLocation: classpath:/shared
+        git:
+          uri: https://github.com/noNhead/spring-cloud-config-base
+
 
   profiles:
-     active: native
+     active: git
 
 server:
   port: ${CONFIG_PORT:8888}

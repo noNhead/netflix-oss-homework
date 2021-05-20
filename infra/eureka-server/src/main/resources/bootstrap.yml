@@ -7,3 +7,4 @@ spring:
       failFast: true
 
 server.port: 8989
+
